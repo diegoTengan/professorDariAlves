@@ -8,5 +8,17 @@
 </head>
 <body>
     <h1>Usuários</h1>
+
+    <nav>
+        <a href="/">Home</a> 
+    </nav>
+
+    <% Api.forEach(usuario => { %> 
+        <div>
+            <h2>Nome: <%-usuario.name %> </h2>
+            <p>Email: <%-usuario.email %> </p>
+        </div>
+    <% });  %> 
+
 </body>
 </html>
