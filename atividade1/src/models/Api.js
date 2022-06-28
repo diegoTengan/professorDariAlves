@@ -11,7 +11,15 @@ const Api = [
     }
 ];
 
-module.exports = Api;
+const Nomes = ['Bryan', 'Jordan', 'Kevin'];
+
+//module.exports = Api;
+
+
+module.exports = {
+    Api,
+    Nomes,
+};
 
 
 

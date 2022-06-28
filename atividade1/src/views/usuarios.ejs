@@ -17,8 +17,21 @@
         <div>
             <h2>Nome: <%-usuario.name %> </h2>
             <p>Email: <%-usuario.email %> </p>
+            <a href="/usuarios/descricao/<%-usuario.id %>">Descrição</a>
         </div>
     <% });  %> 
+
+
+    <% Nomes.forEach(usuario => { %> -->
+        <div>
+            <h2>Nome: <%-usuario %> </h2>
+        </div>
+    <% });  %>  -->
+
+
+
+
+
 
 </body>
 </html>

@@ -1,15 +1,20 @@
-const Api = require('../models/Api');
+const {Api, Nomes} = require('../models/Api');
 const home = (request, response)=> {
     return response.render('index');
 };
 
 
 const usuario = (request, response)=> {
-    //const nomes = ['Bryan', 'Jordan', 'Kevin'];
-    return response.render('usuarios', {Api});
+    return response.render('usuarios',{Api, Nomes});
 };
+
+const descricao = (request, response) => {
+    const{id}= request.params
+    return response.send(id)
+}
 
 module.exports = {
     home,
     usuario,
+    descricao,
 }
